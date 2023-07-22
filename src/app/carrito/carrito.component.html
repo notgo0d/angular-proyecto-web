@@ -1,0 +1,11 @@
+<h1>Carrito de Compras</h1>
+<table>
+  <tr>
+    <th>Nombre del Producto</th>
+    <th>Precio</th>
+  </tr>
+  <tr *ngFor="let producto of productos">
+    <td>{{ producto.nombre }}</td>
+    <td>$ {{ producto.precio.toFixed(2) }}</td>
+  </tr>
+</table>

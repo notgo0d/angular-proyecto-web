@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="cuenta.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>unirse
+  </title>
+</head>
+<body>
+  <div class="header">
+  <div class="logo">
+    <img src="https://cdn.discordapp.com/attachments/953690093200240720/1131067589464956948/Key_3.png" alt="" class="logo-image">
+</div>
+<div class="navigation">
+    <div>
+      <a href="index.html">inicio</a>
+      <a href="cuenta.html">cuenta</a>
+      <a href="ayuda.html">ayuda</a>
+    </div>
+  <div class="search">
+    <input type="text" class="search-bar" placeholder="Buscar...">
+  </div>
+</div>
+</div>
+  <div class="container" id="loginContainer">
+    <h1>Login</h1>
+    <form id="loginForm">
+      <div class="login-form-image">🔒</div>
+      <label for="username">Nombre de usuario:</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" name="password" required>
+      <button type="submit">Iniciar sesión</button>
+      <p>¿No tienes una cuenta? <button type="button" onclick="showRegisterForm()">Registrar</button></p>
+    </form>
+  </div>
+
+  <div class="container" id="registerContainer" style="display:none;">
+    <h1>Registro</h1>
+    <form id="registerForm">
+      <div class="register-form-image">✨</div>
+      <label for="newUsername">Nuevo nombre de usuario:</label>
+      <input type="text" id="newUsername" name="newUsername" required>
+      <label for="newPassword">Nueva contraseña:</label>
+      <input type="password" id="newPassword" name="newPassword" required>
+      <label for="confirmPassword">Confirmar contraseña:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" required>
+      <button type="submit">Registrar</button>
+      <p>¿Ya tienes una cuenta? <button type="button" onclick="showLoginForm()">Iniciar sesión</button></p>
+    </form>
+  </div>
+<script src="cuenta.js"></script>
+</body>
+</html>
